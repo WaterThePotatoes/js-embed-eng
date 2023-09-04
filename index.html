@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Do you have a spouse?</p>
+    <input type="radio" name="hasSpouse" id="yes-spouse" value = "has-spouse"> You have a Spouse or Common Law Partner.<br>
+    <input type="radio" name="hasSpouse" id="no-spouse" value = "has-no-spouse"> You do not have a Spouse or Common Law Partner.
+    <br><br><br>
+    Section A: Core/Human Capital Factors <br><br><br>
+    Age: <input type="text" name="age" id="age">
+    <br>
+    <br>
+    <p>Please enter your level of education.</p>
+    <input type="radio" name="education" id="under_ss" value = "under_ss"> Less than secondary school (high school) <br>
+    <input type="radio" name="education" id="ss" value = "ss"> Secondary diploma (high school graduation) <br>
+    <input type="radio" name="education" id="one_year" value = "one_year"> One year degree, diploma or certificate <br>
+    <input type="radio" name="education" id="two_year" value = "two_year"> Two year program at an educational institution <br>
+    <input type="radio" name="education" id="three_year" value = "three_year"> Bachelor's degree OR three or more year program at an educational institution <br>
+    <input type="radio" name="education" id="extra" value = "extra"> Two or more certificates, diplomas, or degrees; one must be a program for 3 or more years <br>
+    <input type="radio" name="education" id="masters" value = "masters"> Master's degree, OR prefessional degree needed to practice in a licensed profession <br>
+    <input type="radio" name="education" id="phd" value = "phd"> Doctorate level university degree (Ph.D.) <br>
+
+    <br><br>
+
+    Canadian Language Benchmark (CLB) level <br><br>
+    <input type="radio" name="_CLBtype" id="ielts" value = "ielts"> IELTS Score
+    <input type="radio" name="_CLBtype" id="celpip" value = "celpip"> CELPIP Score
+    <input type="radio" name="_CLBtype" id="tef" value = "tef"> TEF Score
+    <input type="radio" name="_CLBtype" id="tcf" value = "tcf"> TCF Score
+    <input type="radio" name="_CLBtype" id="CLB" value = "CLB"> CLB Score <br>
+    Reading: &nbsp&nbsp<input type="text" name="CLBr" id="CLBr"><br>
+    Writing: &nbsp&nbsp&nbsp<input type="text" name="CLBw" id="CLBw"><br>
+    Listening: <input type="text" name="CLBl" id="CLBl"><br>
+    Speaking: <input type="text" name="CLBs" id="CLBs"><br>
+
+    <br><br>
+
+    Canadian Language Benchmark (CLB) level (Second Language, fill if applicable)<br><br>
+    <input type="radio" name="_CLBtype2" id="ielts2" value = "ielts2"> IELTS Score
+    <input type="radio" name="_CLBtype2" id="celpip2" value = "celpip2"> CELPIP Score
+    <input type="radio" name="_CLBtype2" id="tef2" value = "tef2"> TEF Score
+    <input type="radio" name="_CLBtype2" id="tcf2" value = "tcf2"> TCF Score
+    <input type="radio" name="_CLBtype2" id="CLB2" value = "CLB2"> CLB Score <br>
+    Reading: &nbsp&nbsp<input type="text" name="CLBr2" id="CLBr2"><br>
+    Writing: &nbsp&nbsp&nbsp<input type="text" name="CLBw2" id="CLBw2"><br>
+    Listening: <input type="text" name="CLBl2" id="CLBl2"><br>
+    Speaking: <input type="text" name="CLBs2" id="CLBs2"><br>
+
+    <br><br>
+
+    Years of Canadian Work Experience: &nbsp<input type = "text" name = "workCanada" id = "workCanada"> <br>
+    Years of Foreign Experience: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" name = "workForeign" id = "workForeign"> <br><br><br>
+
+    Do you have a certificate of qualification?<br>
+    <input type="radio" name="CoQ" value = "yes"> Yes <br>
+    <input type="radio" name="CoQ" value = "no"> No
+
+    <br><br>
+
+    <div id = "spouseFactors">
+        <br><br>
+        Section B: Spouse or Common-Law Partner factors <br><br><br>
+
+        <p>Please enter your spouse's level of education.</p>
+        <input type="radio" name="spouse_education" id="spouse_under_ss" value = "under_ss"> Less than secondary school (high school) <br>
+        <input type="radio" name="spouse_education" id="spouse_ss" value = "ss"> Secondary diploma (high school graduation) <br>
+        <input type="radio" name="spouse_education" id="spouse_one_year" value = "one_year"> One year degree, diploma or certificate <br>
+        <input type="radio" name="spouse_education" id="spouse_two_year" value = "two_year"> Two year program at an educational institution <br>
+        <input type="radio" name="spouse_education" id="spouse_three_year" value = "three_year"> Bachelor's degree OR three or more year program at an educational institution <br>
+        <input type="radio" name="spouse_education" id="spouse_extra" value = "extra"> Two or more certificates, diplomas, or degrees; one must be a program for 3 or more years <br>
+        <input type="radio" name="spouse_education" id="spouse_masters" value = "masters"> Master's degree, OR prefessional degree needed to practice in a licensed profession <br>
+        <input type="radio" name="spouse_education" id="spouse_phd" value = "phd"> Doctorate level university degree (Ph.D.) <br><br><br>
+
+        Please enter your spouse's Canadian Language Benchmark (CLB) level <br><br>
+        <input type="radio" name="spouse_CLBtype" id="spouse_ielts" value = "ielts"> IELTS Score
+        <input type="radio" name="spouse_CLBtype" id="spouse_celpip" value = "celpip"> CELPIP Score
+        <input type="radio" name="spouse_CLBtype" id="spouse_tef" value = "tef"> TEF Score
+        <input type="radio" name="spouse_CLBtype" id="spouse_tcf" value = "tcf"> TCF Score
+        <input type="radio" name="spouse_CLBtype" id="spouse_CLB" value = "CLB"> CLB Score <br>
+        Reading: &nbsp&nbsp<input type="text" name="spouse_CLBr" id="spouse_CLBr"><br>
+        Writing: &nbsp&nbsp&nbsp<input type="text" name="spouse_CLBw" id="spouse_CLBw"><br>
+        Listening: <input type="text" name="spouse_CLBl" id="spouse_CLBl"><br>
+        Speaking: <input type="text" name="spouse_CLBs" id="spouse_CLBs"><br>
+
+        <br><br>
+        Your spouse's years of Canadian Work Experience: <input type = "text" name = "spouse_workCanada" id = "spouse_workCanada"> <br><br>
+
+
+    </div>
+
+    <br><br>
+
+    <div>
+        Section C: Skill transferability factors <br><br><br>
+
+        This section was calculated using the information you provided above (Education and Work Experience). <br> Please fill out the entirety of section A for accurate results. <br><br>
+    </div>
+
+    <br><br>
+
+    <div>
+        Section D: Additional points <br><br><br>
+
+        <input type="checkbox" id="additionalPointsOne" value="15">Brother or sister living in Canada who is a citizen or permanent resident of Canada<br>
+        <input type="checkbox" id="additionalPointsTwo" value="25">Scored NCLC 7 or higher on all four French language skills and scored CLB 4 or lower in English (or didn’t take an English test)<br>
+        <input type="checkbox" id="additionalPointsThree" value="50">Scored NCLC 7 or higher on all four French language skills and scored CLB 5 or higher on all four English skills<br>
+        <input type="checkbox" id="additionalPointsFour" value="15">Post-secondary education in Canada - credential of one or two years<br>
+        <input type="checkbox" id="additionalPointsFive" value="30">Post-secondary education in Canada - credential three years or longer<br>
+        <input type="checkbox" id="additionalPointsSix" value="200">Arranged employment – NOC TEER 0 Major group 00<br>
+        <input type="checkbox" id="additionalPointsSeven" value="50">Arranged employment – NOC TEER 1, 2 or 3, or any TEER 0 other than Major group 00<br>
+        <input type="checkbox" id="additionalPointsEight" value="600">Provincial or territorial nomination<br>
+
+    </div>
+
+    <br><br>
+
+    If your points are not updating, click the following button to update them manually. <br><br>
+    <button type="button" id="update_button">Update</button> <br><br><br><br>
+
+    <div id="result">
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
